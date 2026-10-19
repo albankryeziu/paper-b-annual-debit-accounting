@@ -2,7 +2,9 @@
 
 **Annual Restriction Accounting for Non-Firm Transmission Access: Entitlement Geometry and Network Effects**
 
-Alban Kryeziu, Stuart X. Zhu, Tolga Karabas, and Evrim Ursavas. Research software and reproducibility evidence for a manuscript targeting IEEE Transactions on Power Systems. This repository does not imply journal acceptance or operational deployment.
+Alban Kryeziu, Stuart X. Zhu, Tolga Karabas, and Evrim Ursavas.
+
+This repository presents the final Dutch experiment implementation and manuscript. Start with the mathematical core in `src/tpwrs/`, then the final experiment drivers in `src/jobs/`. Each implementation is kept once. Earlier packages and audit inventories remain in the preserved research release, outside the main source view. See the [code guide](docs/CODE_GUIDE.md) for the methods and data flow.
 
 ## Scientific status
 
@@ -22,28 +24,41 @@ python RUN_PAPERB.py
 
 GitHub authentication is required while this repository is private. `RUN_PAPERB.py` checks the committed file identities and Python syntax and prints the evidence status. It never runs an optimization or power-flow experiment. GitHub Actions runs the same lightweight checks.
 
-## Repository map
+## Read the final code
 
 | Directory | Contents |
 | --- | --- |
-| `code/frozen_dutch/` | Byte-preserved computational source; original local-path assumptions remain documented |
-| `code/engineering_validation_v2/` | Byte-preserved isolated engineering evaluators and audits |
-| `paper/locked_main/` | Unmodified Gate 3 manuscript, PDF and bibliography |
-| `paper/locked_technical_report/` | Unmodified locked companion and supporting files |
+| [`src/tpwrs/`](src/tpwrs/) | Shared case contracts, DC model, annual support engine, rolling ledger and premium construction |
+| [`src/jobs/`](src/jobs/) | Final duration/depth campaign, premium campaign and exposure comparisons |
+| [`validation/`](validation/) | Final matched AC, physical-overload, headroom and information checks |
+| [`certificates/`](certificates/) | Independent annual lower-bound reconstruction and verification |
+| [`paper/main/`](paper/main/) | Final locked manuscript source and PDF |
+| [`paper/technical_companion/`](paper/technical_companion/) | Its locked companion |
 | `paper/proposed_engineering_amendments/` | Proposed exact edits, not an already integrated or recompiled submission |
-| `reports/` | Annual certificates, engineering dossier and scientific audit PDFs |
-| `results/` | Compact, traceable annual and engineering result tables |
+| `reports/` | Final engineering dossier and annual certificate report |
+| `results/` | Main duration/depth, premium, exposure and engineering tables; frozen premium card |
 | `data/` | Versioned release-asset registry and data access instructions |
 | `scripts/` | Lightweight integrity checking and authenticated asset download |
-| `reproducibility/` | Source-copy manifest, environment and restoration instructions |
+| `reproducibility/` | Source mapping and integrity identities |
 
-Full numerical arrays, per-epoch checkpoints and complete raw engineering rows are distributed as private GitHub **release assets**, not omitted and not silently replaced by small samples. `data/ASSETS.json` lists their exact sizes and SHA-256 values. See [data access](data/README.md) and [reproduction](reproducibility/README.md).
+Read `contracts.py`, `model.py`, `replay.py`, `annual.py`, then `rolling.py` in `src/tpwrs/`. The final campaign drivers are `primary.py`, `debit_rule_family.py`, `m1_exposure_matched.py` and `exposure_diagnostic.py` in `src/jobs/`. `debit_rules.py` implements the relief score and premium law; `cards.py` contains the shared three-rate QP and retained flat-card diagnostic helpers.
+
+Full arrays and raw evidence remain in the [preserved research snapshot](https://github.com/albankryeziu/paper-b-annual-debit-accounting/releases/tag/v0.1.0-research-snapshot), with sizes and SHA-256 values in `data/ASSETS.json`. See [data access](data/README.md) and [reproduction](docs/REPRODUCIBILITY.md).
 
 ## Environments and scientific execution
 
 The validated scientific environment uses Python 3.9.7, NumPy 1.26.4, SciPy 1.11.4, pandas 2.2.2, pandapower 3.2.1, pyarrow 15.0.2 and Gurobi 12.0.3. Historical optimization requires an independently valid Gurobi license; no license file or credential is distributed. The root `requirements.txt` records observed scientific versions, but the repository verification uses only the Python standard library.
 
-The preserved scientific scripts contain machine-specific paths and references to frozen data outside their original directories. **Do not assume that running the old `RUN.py` after cloning reproduces the paper.** Follow the restoration/data-availability guide first. Configure a separate writable reproduction workspace. Keep frozen evidence read-only; do not rerun, refit or overwrite it merely to inspect this repository. No solver rerun was used to prepare this GitHub distribution.
+For the focused mathematical and ledger tests:
+
+```bash
+python -m pip install -e ".[test]"
+python -m pytest tests -q
+```
+
+GitHub Actions runs integrity checks and these tests using small synthetic inputs, without repeating annual campaigns.
+
+The compact source is a readable edition of the recorded implementation. **Relocated campaign drivers still need their original runtime layout and qualification records.** They are not a newly qualified one-command numerical rerun. Formatting changes source hashes; existing gates are retained rather than bypassed. See [reproduction](docs/REPRODUCIBILITY.md) before scientific execution. Original evidence and experiments remain unchanged.
 
 ## Citation, licenses and publication
 

@@ -1,0 +1,13 @@
+{
+  "confirmation_year": 2031,
+  "gain_guarded": 8625167.226806492,
+  "gain_raw": 8625167.227535784,
+  "heldout_years": [
+    2029,
+    2030
+  ],
+  "promoted": true,
+  "selection": "single fitting-designed candidate; validation accepts or rejects without retuning",
+  "threshold": 155100.63539752684,
+  "validation_year": 2028
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paperb-annual-debit-accounting"
+version = "0.2.0"
+description = "Final Paper B annual debit models and chronological experiments"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Alban Kryeziu"}, {name = "Stuart X. Zhu"}, {name = "Tolga Karabas"}, {name = "Evrim Ursavas"}]
+dependencies = ["numpy==1.26.4", "scipy==1.11.4", "pandas==2.2.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=6.2"]
+scientific = ["gurobipy==12.0.3", "pandapower==3.2.1", "pyarrow==15.0.2", "scikit-learn==1.3.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.format]
+line-ending = "lf"

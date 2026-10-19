@@ -1,1 +1,0 @@
-"""Auditable TPWRS numerical implementation."""

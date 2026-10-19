@@ -1,9 +1,0 @@
-{
-  "A_B": "01_PHYSICAL_METRICS/ANNUAL_PHYSICAL_METRICS.csv",
-  "C": "01_PHYSICAL_METRICS/HOURLY_MAXIMUM_EXCEEDANCE.parquet",
-  "D": "02_MATCHED_AC_VALIDATION/MATCHED_AC_SUMMARY.csv",
-  "E": "02_MATCHED_AC_VALIDATION/MATCHED_AC_CASES.csv",
-  "smoothing": false,
-  "statistical_error_bars": false,
-  "years_are_independent_trials": false
-}

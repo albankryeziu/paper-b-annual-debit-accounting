@@ -1,0 +1,81 @@
+{
+  "buckets": "Pooled fitting exposure-weighted tertiles; directions share physical residual/FDE units",
+  "card_hash": "ad53f37039d5bbb4be89b11e52908a6ef3ef939530730a8b4bf1ac36b8f22d29",
+  "code_hashes": {
+    "jobs/debit_rule_family.py": "c2643b5b10eb8dac45dded7bc4cbc8e6ac15787666a06cec75eb4ddae0b70aa8",
+    "tpwrs/debit_rules.py": "06222b9ac4fef6bcd4f5e80adedf2027a1b509501bea6384f7f0ccae13238a3b"
+  },
+  "design": {
+    "gamma": 0.5,
+    "penalty": 1.0,
+    "xi": 0.25
+  },
+  "diagnostic": {
+    "mean_equality_residual": 2.9103830456733704e-11,
+    "objective": 23576.2967274641,
+    "positive_reference_buckets": 3,
+    "rate_dispersion": 0.4073554013989704,
+    "reference_mean_rate": 1.2500000000000004
+  },
+  "feature_information": "PREDECLARED_CONTROLLED_INPUT; requested-state right derivative, no future optimized actions",
+  "fit_years": [
+    2025,
+    2026,
+    2027
+  ],
+  "gate": {
+    "minimum_absolute_improvement": 1.0,
+    "minimum_relative_improvement": 0.001,
+    "require_strict_guarded_feasibility": true
+  },
+  "input_hashes": {
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/CARD_BUILD_STATUS.json": "5ba9bd8d88b3155a033b0bfcb71d940f8767336b367f3b8401c774e3670629d2",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/RHO15_SELECTED_CARD.json": "099d9e962244f01478b103e74bff29a81d474ef2c9189663bbbcdde5ed4ef37d",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/CARD_histgb.json": "6dc275cf2cee6447a647e46c512d2b9093ca15df5172b1ea5c9f3d9a826c453b",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/CARD_ridge.json": "099d9e962244f01478b103e74bff29a81d474ef2c9189663bbbcdde5ed4ef37d",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/MODEL_histgb.joblib": "d2257e81de02f6d962185c45970b671ac72944dd08f03a4751210baf7a38ed1d",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/MODEL_ridge.joblib": "7f4ac76a0a76c09f16623814d6b02975149118ad159182c8a2f75e01a1e51e39",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/teacher_rows_2025.parquet": "4981fa95e82c0bd72d7b941c0291d5511702b6ef58421f86c96575f470892fe4",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/teacher_rows_2026.parquet": "478bf4953b0c5f08d2f54c1398f58efa621d4c7cfa63cc985594d0b2856a8780",
+    "IMPLEMENTATION/frozen_inputs/artifacts/cards/rho_0.15/teacher_rows_2027.parquet": "b7b54eb54ac7f561216704a45ce63fb8003949b7e000f2ac9d9bf2368a306250",
+    "IMPLEMENTATION/frozen_inputs/artifacts/features/F0_2025.parquet": "3a6760bf91e150e2b92158d23f7f578139a663094b4f0f86966d76782e2dc64a",
+    "IMPLEMENTATION/frozen_inputs/artifacts/features/F0_2026.parquet": "f14459544b991f26284b84267aaead2ce84d130c4dfcae3b022a998618f5c60b",
+    "IMPLEMENTATION/frozen_inputs/artifacts/features/F0_2027.parquet": "7e7ca17628f112c8706e33f65a110c7513151a8ab92b127c00809037d854efcd",
+    "IMPLEMENTATION/frozen_inputs/artifacts/real_case/physical_case/FINAL_DUTCH_CASE/physical_case.json": "de5729f420044dda0069441d19adfe0ef4bbdd1027927320725611f55d2d10ec",
+    "IMPLEMENTATION/frozen_inputs/artifacts/real_case/physical_case/FINAL_DUTCH_CASE/physical_case_arrays.npz": "a778a4c2bc2645969cf7764ff10dc88fa114ebd0c9e295edcc25aaaf07c89feb",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2025/EXPERIMENT_CASE.json": "0247f715082087ce08723ee3509e68d48dd9be17225865bb57baed6c9630944e",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2025/solution.json": "92d0776c8f896f1a7f2d6b9c0ce8b9747ec9e9f5d5fc4c17bc98937de2029ad0",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2025/solution_arrays.npz": "f39fe166bdd031d4f90e05309a60efda2437b6760012e23b27e7882721b5aec1",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2026/EXPERIMENT_CASE.json": "d4b8674a4b758ccfdecd6aa36618ee8da035943dd3157416bd1bc039f0914ece",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2026/solution.json": "8c524b857a226224b7b5d7758839e402a9b73eab9833afc597cf12ef6d1aa208",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2026/solution_arrays.npz": "c8c69e847bdd610ea6d9e87b66059db5dee5fc764ab2f8b1f36ac24722273ba2",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2027/EXPERIMENT_CASE.json": "59d09f3f4bc93418df370771878a9541524b283a7d25037dbcebeff60f0f2afb",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2027/solution.json": "606216f53fca500028debfb5bc142570f549448666415a92198baa87af9d967d",
+    "RESULTS/provenance/card_fitting_teacher/rho_0.15/teacher_experiments/4d2e94c40dc54bacb7c936609b87dffc501c348dc27703e437490f2c32a1ee22/teacher_solution_2027/solution_arrays.npz": "e1de798915b8f48c59c937a98c8b3e52466ecf4724e5e99caf17f89c41f024b2"
+  },
+  "marginal_relief_means_per_FDE": [
+    38.8460923172745,
+    291.03699584150473,
+    3895.515231977065
+  ],
+  "parent_physical_case_hash": "2ed58c3ba8dd673cc53996f713acb983126a9df45922afcb2d5adb3c2e34aeb6",
+  "rates": [
+    1.4073554013989704,
+    1.3426166214157533,
+    1.0
+  ],
+  "reference_W_FDE": [
+    20287.106787963174,
+    20286.526020704623,
+    20284.621328576544
+  ],
+  "reference_weights": "Fitting-only archived annual M2 positive physical FDE; tiny negative solver coordinates excluded only from calibration weights",
+  "rule_id": "CONSERVATIVE_STAGE1_RELIEF_V1",
+  "score_scale": 3895.515231977065,
+  "thresholds": [
+    123.89904706118267,
+    570.7214611319412
+  ],
+  "uniform_rate": 1.25,
+  "validation_year": 2028
+}
