@@ -1,0 +1,15 @@
+{
+  "status": "PASS_WITH_RETROSPECTIVE_INFORMATION_LIMIT",
+  "records": 6,
+  "card_hash": "ad53f37039d5bbb4be89b11e52908a6ef3ef939530730a8b4bf1ac36b8f22d29",
+  "fit_years": [
+    2025,
+    2026,
+    2027
+  ],
+  "lookahead_hours": 48,
+  "commit_hours": 24,
+  "forecast_vintage_authenticated": false,
+  "future_optimized_actions_in_score": false,
+  "prospective_validation_performed": false
+}

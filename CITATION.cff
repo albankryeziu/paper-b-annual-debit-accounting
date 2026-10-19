@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the Paper B manuscript and this versioned software/evidence repository."
+type: software
+title: "Annual Restriction Accounting for Non-Firm Transmission Access: Entitlement Geometry and Network Effects"
+authors:
+  - family-names: Kryeziu
+    given-names: Alban
+  - family-names: Zhu
+    given-names: Stuart X.
+  - family-names: Karabas
+    given-names: Tolga
+  - family-names: Ursavas
+    given-names: Evrim
+repository-code: "https://github.com/albankryeziu/paper-b-annual-debit-accounting"
+url: "https://github.com/albankryeziu/paper-b-annual-debit-accounting"
+version: 0.1.0-research-snapshot
+date-released: 2026-10-19

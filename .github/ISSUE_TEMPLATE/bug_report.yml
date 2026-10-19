@@ -1,0 +1,9 @@
+name: Reproducibility issue
+description: Report a source, identity, or reproduction problem
+body:
+  - type: textarea
+    attributes:
+      label: Description and reproduction steps
+      description: Include commit, asset hashes, environment, stage, and observed versus expected behavior. Do not include credentials or license files.
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+Policy,Convergence_changes,Thermal_status_changes,Voltage_status_changes,Q_status_changes,Peak_changes_over_1pp,Max_voltage_extremum_shift_pu
+ROLLING_M2,0,0,0,0,0,0.0005067597114423172
+U,0,0,0,0,0,0.0005496236528748089
+C,0,0,0,0,0,0.0005322327959347284
+EC,0,0,0,0,0,0.0005597017749727762

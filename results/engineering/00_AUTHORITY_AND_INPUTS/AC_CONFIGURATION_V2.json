@@ -1,0 +1,33 @@
+{
+  "version": "ENGINEERING_AC_V2_COMMON_PQ",
+  "modeling_authority": "User decision: C_Q_new=C_P_final; declared participant-level constant-PF assumption, not undocumented device-location reconstruction",
+  "mappings": [
+    "COMMON_PQ_V2",
+    "HISTORICAL_TWO_MAP"
+  ],
+  "physical_case_hash": "2ed58c3ba8dd673cc53996f713acb983126a9df45922afcb2d5adb3c2e34aeb6",
+  "policy_years": [
+    2029,
+    2030,
+    2031
+  ],
+  "power_factors": [
+    "unity",
+    "lagging_098",
+    "leading_098"
+  ],
+  "solver": {
+    "algorithm": "nr",
+    "initializations": [
+      "dc",
+      "flat"
+    ],
+    "enforce_q_lims": true,
+    "max_iteration": 100,
+    "tolerance_mva": 1e-08
+  },
+  "unchanged": "Active A, trajectories, background P/Q, PV reference P/voltage/Q bounds, slack, network, outages, ratings and solver settings",
+  "mapping_arrays_sha256": "5f60ba64a3498f231dda69eef866516069364b4946ad00ff04833a798682488b",
+  "planned_common_cases": 648,
+  "planned_historical_premium_cases": 486
+}

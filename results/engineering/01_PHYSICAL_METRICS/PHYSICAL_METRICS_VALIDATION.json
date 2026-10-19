@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "objects": 21,
+  "hourly_records": 183960,
+  "hours_per_object": 8760,
+  "rows_per_hour": 8837,
+  "thresholds_MW": [
+    0.0001,
+    1.0
+  ],
+  "quantiles": "numpy percentile linear",
+  "maximum_objective_discrepancy": 0.0,
+  "objective_units": "MW h row-state; not unserved energy or expected risk",
+  "peak_scope": "maximum over retained contingency states, not simultaneous overload",
+  "optimization_calls": 0
+}

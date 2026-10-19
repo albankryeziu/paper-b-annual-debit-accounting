@@ -1,0 +1,62 @@
+{
+  "repository": "albankryeziu/paper-b-annual-debit-accounting",
+  "tag": "v0.1.0-research-snapshot",
+  "date": "2026-10-19",
+  "visibility": "private",
+  "assets": [
+    {
+      "name": "paperb-frozen-dutch-current.zip",
+      "bytes": 1267932896,
+      "sha256": "50d751e3d3be940359280ea060441ec7a21a51ac3ec3d04ec885b8a6b859eb1d",
+      "files": 104937
+    },
+    {
+      "name": "paperb-engineering-v2.zip",
+      "bytes": 36912501,
+      "sha256": "60d21b3f79cfd43ea52dd68797141369bfcc2caaddd5e156177f8c4351f83291",
+      "files": 1495
+    },
+    {
+      "name": "paperb-blocked-preflight.zip",
+      "bytes": 1578523,
+      "sha256": "ab18fbddc880d823a62eb20c631fc482d87ea0f513c9d427d8f8b676c9820b1d",
+      "files": 42
+    },
+    {
+      "name": "paperb-independent-audit.zip",
+      "bytes": 213419516,
+      "sha256": "c1b668fa8f7a08f9ea2ec41c058916de4a07738d411106d12bbeb3359913a97c",
+      "files": 214
+    },
+    {
+      "name": "paperb-annual-certificate-2029.zip",
+      "bytes": 407217471,
+      "sha256": "0e5e4d62da6b0d7942fe730e2b8482d1a449dcf0aef381e966f6c77b555da6e4",
+      "files": 23
+    },
+    {
+      "name": "paperb-annual-certificate-2030.zip",
+      "bytes": 405302380,
+      "sha256": "8005dc9577907bc09465d3c24adcf803a20e285fdb95a72a7bd9c3bbc9f5e7fa",
+      "files": 21
+    },
+    {
+      "name": "paperb-annual-certificate-2031.zip",
+      "bytes": 446745205,
+      "sha256": "885981c5be8e858621a3e2e57e21ca803d8a9610aed2aa785fcb5c9ccdf798e6",
+      "files": 21
+    },
+    {
+      "name": "paperb-final-signoff-and-submission.zip",
+      "bytes": 226279644,
+      "sha256": "1a72143c52bec2a8495b8ddafbe9485170acffd9262375e11967572280329538",
+      "files": 361
+    },
+    {
+      "name": "paperb-registered-upstream-sources.zip",
+      "bytes": 203610508,
+      "sha256": "961c2ff30d84ab99180a73e48bc8afa788fb0ba0d0de7cc7e7aaaf64aff19b2e",
+      "files": 25
+    }
+  ]
+}

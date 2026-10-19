@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "independent_key_direct_columns": 79,
+  "independent_common_map_max_error": 3.469446951953614e-18,
+  "nonnegative_normalized": true,
+  "active_transaction_matrix_unchanged": true,
+  "reactive_uses_final_active_component_distribution": true,
+  "selected_input_records": 216,
+  "max_spatial_difference_reconstruction_error_Mvar": 4.973799150320701e-14,
+  "max_total_Q_difference_Mvar": 9.094947017729282e-13,
+  "unity": "Participant delta Q exactly zero by both mappings; independent solved cases agree as recorded in MATCHED_AC_QC.json",
+  "AC_solves": 0,
+  "optimizer_calls": 0
+}

@@ -1,0 +1,7 @@
+mapping,left,right,pairs,nonconvergent_pairs,ac_apparent_normalized_thermal_exceedance_A,ac_apparent_normalized_thermal_exceedance_B,ac_apparent_normalized_thermal_exceedance_TIE,ac_apparent_normalized_thermal_exceedance_sum_difference,maximum_loading_percent_A,maximum_loading_percent_B,maximum_loading_percent_TIE,maximum_loading_percent_sum_difference,maximum_voltage_limit_deviation_pu_A,maximum_voltage_limit_deviation_pu_B,maximum_voltage_limit_deviation_pu_TIE,maximum_voltage_limit_deviation_pu_sum_difference,max_q_limit_violation_mvar_A,max_q_limit_violation_mvar_B,max_q_limit_violation_mvar_TIE,max_q_limit_violation_mvar_sum_difference,feasibility_BOTH,feasibility_ONLY_A,feasibility_ONLY_B,feasibility_NEITHER
+COMMON_PQ_V2,C,ROLLING_M2,162,0,0,15,147,3.131601654250349,12,15,135,322.28623001084486,0,0,162,0.0,0,0,162,0.0,78,0,6,78
+COMMON_PQ_V2,C,U,162,0,18,9,135,-4.38731893728759,18,9,135,-662.427009574432,0,0,162,0.0,0,0,162,0.0,66,12,0,84
+COMMON_PQ_V2,EC,U,162,0,18,90,54,3.5191282998558746,44,118,0,-367.2547165129083,0,0,162,0.0,0,0,162,0.0,54,12,12,84
+HISTORICAL_TWO_MAP,C,ROLLING_M2,162,0,0,15,147,3.125759369198353,12,15,135,321.89681544561313,0,0,162,0.0,0,0,162,0.0,78,0,6,78
+HISTORICAL_TWO_MAP,C,U,162,0,18,9,135,-4.377108995196946,18,9,135,-661.6096033582002,0,0,162,0.0,0,0,162,0.0,66,12,0,84
+HISTORICAL_TWO_MAP,EC,U,162,0,18,90,54,3.5198119269602595,44,118,0,-367.27023231207676,0,0,162,0.0,0,0,162,0.0,54,12,12,84
